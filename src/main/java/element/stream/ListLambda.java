@@ -1,7 +1,7 @@
-
+package element.stream;
 
 import com.google.common.collect.Lists;
-import model.Human;
+import element.stream.model.Human;
 import org.junit.Test;
 
 import java.util.Comparator;

@@ -1,3 +1,5 @@
+package element.stream;
+
 import com.google.common.collect.Maps;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package model;
+package element.stream.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
