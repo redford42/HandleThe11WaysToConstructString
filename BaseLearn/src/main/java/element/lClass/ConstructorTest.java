@@ -1,8 +1,5 @@
 package element.lClass;
 
-import java.awt.*;
-import java.util.Random;
-
 /**
  * @author Hanz
  * @date 2019/7/31

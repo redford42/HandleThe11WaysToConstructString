@@ -1,4 +1,4 @@
-package otherTools.csv;
+package csv;
 
 import java.util.Date;
 import java.util.Objects;

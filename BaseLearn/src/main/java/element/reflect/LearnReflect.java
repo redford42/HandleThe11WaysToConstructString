@@ -1,7 +1,5 @@
 package element.reflect;
 
-import com.google.common.io.MoreFiles;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
