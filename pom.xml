@@ -6,6 +6,7 @@
         <module>NIOServer</module>
         <module>NIOClient</module>
         <module>BaseLearn</module>
+        <module>Pattern</module>
     </modules>
 
     <parent>
