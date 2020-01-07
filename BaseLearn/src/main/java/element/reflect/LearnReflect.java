@@ -17,20 +17,20 @@ public class LearnReflect {
             name = args[0];
         } else {
             Scanner in = new Scanner(System.in);
-            System.out.println("Enter class name (e.g. java.utin.Date):");
+            System.out.println("Enter class name (e.g. java.util.Date):");
             name = in.next();
         }
 
 
         try {
             Class cl = Class.forName(name);
-            Class supercl = cl.getSuperclass();
+            Class superclass = cl.getSuperclass();
             String modifiers = Modifier.toString(cl.getModifiers());
             if (modifiers.length() > 0) {
                 System.out.println(modifiers + " ");
                 System.out.println("class " + name);
-                if (supercl != null && supercl != Object.class) {
-                    System.out.println("extends " + supercl.getName());
+                if (superclass != null && superclass != Object.class) {
+                    System.out.println("extends " + superclass.getName());
                 }
 
                 System.out.println("\n{\n");
