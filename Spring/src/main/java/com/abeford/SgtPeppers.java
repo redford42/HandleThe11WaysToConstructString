@@ -13,6 +13,7 @@ public class SgtPeppers implements CompactDisc {
 
     private String title = "Black And Red";
     private String artist = "AbeFord";
+    @Override
     public void play() {
         System.out.print("Playing" + title + "by" +artist);
     }
