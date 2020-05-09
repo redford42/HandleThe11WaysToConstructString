@@ -7,6 +7,7 @@
         <module>NIOClient</module>
         <module>BaseLearn</module>
         <module>Pattern</module>
+        <module>Math99</module>
     </modules>
 
     <parent>

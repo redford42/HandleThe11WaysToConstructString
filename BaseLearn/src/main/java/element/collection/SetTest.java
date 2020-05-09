@@ -1,9 +1,6 @@
 package element.collection;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author Hanz
@@ -12,24 +9,44 @@ import java.util.Set;
 public class SetTest {
 
     public static void main(String[] args) {
-        Set<String> words = new HashSet<>();
-        long totalTime = 0;
+//        Set<String> deviceIds = new HashSet<>();
+//        deviceIds.add("01");
+//        deviceIds.add("02");
+//
+//        int size = deviceIds.size();
+//        String[] deviceIdList = new String[size];
+//        deviceIds.toArray(deviceIdList);
+//        System.out.println("?????我觉得不对吼" + Arrays.toString(deviceIdList));
 
-        Scanner in = new Scanner(System.in);
-        while (in.hasNext()) {
-            String word = in.next();
-            long callTime = System.currentTimeMillis();
-            words.add(word);
-            callTime = System.currentTimeMillis() - callTime;
-            totalTime += callTime;
-        }
+        Long testNum = 0L;
+        test(testNum);
+        System.out.println(testNum);
 
-        Iterator<String> iter = words.iterator();
-        for (int i = 0; iter.hasNext(); i++) {
-            System.out.print(iter.next() + " ");
-        }
-        System.out.println("...");
-        System.out.println(words.size() + "distinct words." + totalTime + "milliseconds.");
     }
+
+
+    public static void test(Long num) {
+        num = 10L;
+    }
+//    public static void main(String[] args) {
+//        Set<String> words = new HashSet<>();
+//        long totalTime = 0;
+//
+//        Scanner in = new Scanner(System.in);
+//        while (in.hasNext()) {
+//            String word = in.next();
+//            long callTime = System.currentTimeMillis();
+//            words.add(word);
+//            callTime = System.currentTimeMillis() - callTime;
+//            totalTime += callTime;
+//        }
+//
+//        Iterator<String> iter = words.iterator();
+//        for (int i = 0; iter.hasNext(); i++) {
+//            System.out.print(iter.next() + " ");
+//        }
+//        System.out.println("...");
+//        System.out.println(words.size() + "distinct words." + totalTime + "milliseconds.");
+//    }
 
 }
