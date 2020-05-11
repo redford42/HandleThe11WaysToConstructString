@@ -10,6 +10,8 @@
         <module>Math99</module>
     </modules>
 
+
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -18,13 +20,14 @@
     </parent>
     <groupId>HandleThe11WaysToConstructString</groupId>
     <artifactId>HandleThe11WaysToConstructString</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${global.version}</version>
     <packaging>pom</packaging>
 
     <name>HandleThe11WaysToConstructString</name>
     <description>Demo project for Java8</description>
 
     <properties>
+        <global.version>0.1-SNAPSHOT</global.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
