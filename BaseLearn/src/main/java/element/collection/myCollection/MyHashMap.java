@@ -40,11 +40,21 @@ public class MyHashMap {
         newNode.value = value;
         newNode.next = null;
 
+        Node iterLast = null;
         Node temp = table[newNode.hash];
         if (temp == null){
             table[newNode.hash] = newNode;
         }else {
             //Traverse all
+            while(temp != null){
+                if(temp.key.equals(key)){
+                    System.out.print("repeat key");
+                }else {
+                    iterLast = temp;
+                    temp = temp.next;
+                }
+            }
+            iterLast.next = newNode;
         }
     }
 
