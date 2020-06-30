@@ -48,4 +48,10 @@ public class FileController {
         }
         return response;
     }
+
+
+    @GetMapping("/download/csv")
+    public HttpServletResponse downloadCsv(HttpServletResponse response) {
+        return null;
+    }
 }
