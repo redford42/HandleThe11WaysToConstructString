@@ -27,19 +27,6 @@ public class SpringbootStudyApplication {
         SpringApplication.run(SpringbootStudyApplication.class, args);
         MYSQLConfig mysqlConfig = new MYSQLConfig();
         System.out.println(mysqlConfig.getHost());
-        ExecutorService executorService = newSingleThreadExecutor(
-                new ThreadFactory() {
-                    @Override
-                    public Thread newThread(Runnable r) {
-                        return new Thread("Report Task Scanner");
-                    }
-                }
-        );
-        executorService.execute(() -> {
-            for (int i = 0; i < 10; i++) {
-                System.out.println("?????????????????????日");
-            }
-        });
     }
 }
 

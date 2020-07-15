@@ -1,8 +1,12 @@
 package element.joda;
 
 import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -12,7 +16,11 @@ import java.util.List;
 public class TestOfJoda {
 
     public static void main(String[] args) {
-        eachMonthBetween();
+
+        long test1 = new DateTime("20200610").getMillis();
+        DateTimeFormatter yyyyMMddHH = DateTimeFormat.forPattern("yyyyMMddHH");
+        DateTime dateTime = DateTime.parse("2020061001", yyyyMMddHH);
+        System.out.println(dateTime.getMillis());
     }
 
 

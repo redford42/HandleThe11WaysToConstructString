@@ -13,12 +13,7 @@ import static java.util.concurrent.Executors.newSingleThreadExecutor;
 public class Executor {
     public static void main(String[] args) {
         boolean exitFlag = false;
-        ExecutorService taskScanner = newSingleThreadExecutor(new ThreadFactory() {
-            @Override
-            public Thread newThread(Runnable r) {
-                return new Thread("Report Task Scanner");
-            }
-        });
+        ExecutorService taskScanner = newSingleThreadExecutor();
         taskScanner.submit(new Runnable() {
             @Override
             public void run() {
